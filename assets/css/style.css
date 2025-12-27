@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  background-color: hsl(30, 54%, 90%);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.blog--post {
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  width: 50%;
+  border-radius: 10px;
+  flex-shrink: 0;
+  
+}
+
+.blog--image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.blog--post-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog--post-text h1 {
+  font-family: "Young Serif";
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.blog--post-text p {
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+}
+
+.blog--recipe {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.blog--recipe h3 {
+  font-size: 15px;
+  color: hsl(332, 51%, 32%);
+}
+
+.blog--recipe ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  list-style: disc inside;
+
+}
+
+.blog--recipe span {
+  font-weight: 600;
+}
+
+.blog--ingredients h2 {
+  font-family: "Young Serif";
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+
+.blog--ingredients ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  list-style: disc inside;
+  
+}
+
+.blog--instructions {
+  padding: 0 10px;
+}
+.blog--instructions h2 {
+  font-family: "Young Serif";
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+
+.blog--instructions ol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  list-style-position: inside;
+}
+
+.blog--nutrition h2 {
+  font-family: "Young Serif";
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+
+.blog--nutrition p {
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  margin: 10px 0;
+}
+
+.list--items {
+  display: flex;
+  gap: 50%;
+  padding: 10px;
+}
+
+.blog--nutrition .list--number {
+  text-align: right;
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+
+
+@media  (max-width: 357px) {
+  .blog--post {
+    width: 100%;
+  }
+
+  .blog--post-text h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog--post {
+    width: 100%;
+  }
+
+  .blog--post-text h1 {
+    font-size: 1.5rem;
+  }
+}
